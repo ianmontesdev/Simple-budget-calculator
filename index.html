@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+</head>
+<body>
+    <form id="form">
+        <label for="ammount">Cantidad</label>
+        <input type="number" name="ammount" id="ammount">
+        <label for="operation">Operación</label>
+        <input type="text" name="operation" id="name">
+        <label for="operation">Restar</label>
+        <input type="checkbox" name="operation" id="res">
+        <button type="button" onclick="add()">Añadir</button>
+    </form>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operación</th>
+                    <th>Resultado</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody id="result-body">
+            </tbody>
+        </table>
+        <p>Total</p>
+        <p id="total"></p>
+        <p>Restante</p>
+        <p id="rest"></p>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
